@@ -1,0 +1,46 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns="http://www.w3.org/2000/svg"  xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1">
+<defs>
+<symbol id="dice" viewBox="0 0 100 100">
+	<rect x="4" y="4" rx="10" ry="10" width="92" height="92" style="stroke-width:3;stroke:rgb(0,0,0);fill:rgb(255,255,255);"/>
+</symbol>
+<symbol id="dice1" viewBox="0 0 100 100">
+	<use xlink:href="#dice"></use>
+	<circle cx="50" cy="50" r="6"/>
+</symbol>
+<symbol id="dice2" viewBox="0 0 100 100">
+	<use xlink:href="#dice"></use>
+	<circle cx="75" cy="25" r="6"/>
+	<circle cx="25" cy="75" r="6"/>
+</symbol>
+<symbol id="dice3" viewBox="0 0 100 100">
+	<use xlink:href="#dice2"></use>
+	<circle cx="50" cy="50" r="6"/>
+</symbol>
+<symbol id="dice4" viewBox="0 0 100 100">
+	<use xlink:href="#dice2"></use>
+	<circle cx="75" cy="75" r="6"/>
+	<circle cx="25" cy="25" r="6"/>
+</symbol>
+<symbol id="dice5" viewBox="0 0 100 100">
+	<use xlink:href="#dice4"></use>
+	<circle cx="50" cy="50" r="6"/>
+</symbol>
+<symbol id="dice6" viewBox="0 0 100 100">
+	<use xlink:href="#dice4"></use>
+	<circle cx="25" cy="50" r="6"/>
+	<circle cx="75" cy="50" r="6"/>
+</symbol>
+<symbol id="rr" viewBox="0 0 100 100">
+	<text x="80" y="10">RR</text>
+</symbol>
+<symbol id="r1" viewBox="0 0 100 100">
+	<text x="80" y="10">R1</text>
+</symbol>
+<symbol id="dice1rr" viewBox="0 0 100 100">
+	<use xlink:href="#dice1"></use>
+	<use xlink:href="#rr"></use>
+</symbol>
+</defs>
+</svg>

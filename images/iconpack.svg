@@ -1,0 +1,135 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" viewBox="0 0 100 100">
+<defs>
+
+<symbol id="dice">
+	<rect x="5" y="5" width="90" height="90" rx="5" ry="5" class="back" style="stroke:currentColor;stroke-width:4px;" />
+</symbol>
+<symbol id="a0">
+	<use xlink:href="#dice" x="0" y="0"/>
+	<path d="M10,15L35,35L33,20L40,35L50,10L52,35L90,10L62,42L90,45L60,55L85,85L55,70L48,85L42,67L15,85L35,60L10,55L30,45z" style="fill:currentColor;stroke:currentColor;stroke-width:2px" />
+	<text x="41" y="68" font-family="arial" font-size="40" font-weight="bold">!</text>	
+</symbol>
+<symbol id="a2">
+	<use xlink:href="#dice" x="0" y="0"/>
+	<text x="35" y="70" font-family="arial" font-size="50" font-weight="bold" fill="currentColor">2</text>	
+</symbol>
+<symbol id="a4">
+	<use xlink:href="#dice" x="0" y="0"/>
+	<text x="35" y="70" font-family="arial" font-size="50" font-weight="bold" fill="currentColor">4</text>	
+</symbol>
+<symbol id="a6">
+	<use xlink:href="#dice" x="0" y="0"/>
+	<text x="35" y="70" font-family="arial" font-size="50" font-weight="bold" fill="currentColor">6</text>	
+</symbol>
+<symbol id="a8">
+	<use xlink:href="#dice" x="0" y="0"/>
+	<text x="35" y="70" font-family="arial" font-size="50" font-weight="bold" fill="currentColor">8</text>	
+</symbol>
+<symbol id="a10">
+	<use xlink:href="#dice" x="0" y="0"/>
+	<text x="20" y="70" font-family="arial" font-size="50" font-weight="bold" fill="currentColor">10</text>	
+</symbol>
+<symbol id="d1">
+	<use xlink:href="#dice" x="0" y="0"/>
+	<circle cx="50" cy="50" r="9" fill="currentColor"/>
+</symbol>
+<symbol id="d2">
+	<use xlink:href="#dice" x="0" y="0"/>
+	<circle cx="28" cy="28" r="9" fill="currentColor"/>
+	<circle cx="72" cy="72" r="9" fill="currentColor"/>
+</symbol>
+<symbol id="d3">
+	<use xlink:href="#d2" x="0" y="0"/>
+	<circle cx="50" cy="50" r="9" fill="currentColor"/>
+</symbol>
+<symbol id="d4">
+	<use xlink:href="#d2" x="0" y="0"/>
+	<circle cx="72" cy="28" r="9" fill="currentColor"/>
+	<circle cx="28" cy="72" r="9" fill="currentColor"/>
+</symbol>
+<symbol id="d5">
+	<use xlink:href="#d4" x="0" y="0"/>
+	<circle cx="50" cy="50" r="9" fill="currentColor"/>
+</symbol>
+<symbol id="d6">
+	<use xlink:href="#d4" x="0" y="0"/>
+	<circle cx="28" cy="50" r="9" fill="currentColor"/>
+	<circle cx="72" cy="50" r="9" fill="currentColor"/>
+</symbol>
+<symbol id="d6b">
+	<use xlink:href="#d6" x="90" y="90" transform="scale(0.5)"/>
+</symbol>
+<symbol id="d7">
+	<use xlink:href="#d6b"/>
+	<use xlink:href="#d4" x="10" y="10" transform="scale(0.7)"/>
+</symbol>
+<symbol id="d8">
+	<use xlink:href="#d6b"/>
+	<use xlink:href="#d5" x="10" y="10" transform="scale(0.7)"/>
+</symbol>
+<symbol id="d9">
+	<use xlink:href="#d6b"/>
+	<use xlink:href="#d6" x="10" y="10" transform="scale(0.7)"/>
+</symbol>
+<symbol id="dnone">
+	<use xlink:href="#dice" x="0" y="0"/>
+	<text x="18" y="60" font-family="verdana" font-size="20" font-weight="bold" fill="currentColor">NONE</text>	
+</symbol>
+<symbol id="dauto">
+	<use xlink:href="#dice" x="0" y="0"/>
+	<text x="18" y="60" font-family="verdana" font-size="20" font-weight="bold" fill="currentColor">AUTO</text>	
+</symbol>
+<symbol id="dall">
+	<use xlink:href="#dice" x="0" y="0"/>
+	<text x="27" y="60" font-family="verdana" font-size="20" font-weight="bold" fill="currentColor">ALL</text>	
+</symbol>
+<symbol id="fivedice">
+	<use xlink:href="#d1" x="0" y="0" transform="scale(0.5)"/>
+	<use xlink:href="#d2" x="100" y="0" transform="scale(0.5)"/>
+	<use xlink:href="#d3" x="0" y="100" transform="scale(0.5)"/>
+	<use xlink:href="#d4" x="100" y="100" transform="scale(0.5)"/>
+	<use xlink:href="#d5" x="50" y="50" transform="scale(0.5)"/>
+</symbol>
+<symbol id="threedice">
+	<use xlink:href="#d1" x="0" y="0" transform="scale(0.5)"/>
+	<use xlink:href="#d4" x="100" y="100" transform="scale(0.5)"/>
+	<use xlink:href="#d5" x="50" y="50" transform="scale(0.5)"/>
+</symbol>
+<symbol id="d0">
+	<use xlink:href="#dnone" x="0" y="0"/>
+</symbol>
+<symbol id="d1">
+	<use xlink:href="#dauto" x="0" y="0"/>
+</symbol>
+<symbol id="hit">
+	<path d="M15,50A35,35 0 0,0 85,50A35,35 0 0,0 15,50zM5,50h30M65,50h30M50,5v30M50,65v30" style="fill:none;stroke:#000;stroke-width:8px" />
+</symbol>
+<symbol id="wound">
+	<path d="M50,5C50,35 20,40 20,65A30,30 0 0,0 80,66C80,40 50,35 50,5" style="stroke:#f00;stroke-width:5;fill:#f00"/>
+</symbol>
+<symbol id="armour">
+	<path d="M15,10C15,35 30,80 50,90C70,80 85,35 85,10z" style="stroke-width:5;fill:#999"/>
+</symbol>
+<symbol id="ward">
+	<path d="M5,50A45,45 0 0,0 95,50A45,45 0 0,0 5,50zM50,90L26,17L88,62L12,62L74,17z" style="fill:none;stroke:#f00;stroke-width:5px" />
+</symbol>
+<symbol id="reroll">
+	<path d="M50,5L70,22.5L50,40V30A20,20 0 1,0 70,50H85A35,35 0 1,1 50,15z" style="fill:currentColor"/>
+</symbol>
+<symbol id="rerolldice">
+	<path d="M50,5L70,22.5L50,40V30A20,20 0 1,0 70,50H85A35,35 0 1,1 50,15z" style="fill:currentColor"/>
+	<use xlink:href="#threedice" x="70" y="70" transform="scale(0.5)"/>
+</symbol>
+<symbol id="reroll1">
+	<path d="M50,5L70,22.5L50,40V30A20,20 0 1,0 70,50H85A35,35 0 1,1 50,15zM45,40v25h10v-25z"/>
+</symbol>
+<symbol id="noreroll" viewBox="0 0 100 100">
+	<path d="M15,50A35,35 0 0,0 85,50A35,35 0 0,0 15,50h15A20,20 0 0,1 70,50A20,20 0 0,1 30,50z"/>	
+</symbol>
+</defs>
+
+
+<use xlink:href="#noreroll" x="0" y="0"/>
+</svg>
