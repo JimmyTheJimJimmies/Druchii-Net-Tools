@@ -1,0 +1,124 @@
+html,body{
+	background:#f8f8f8;
+}
+
+
+svg {
+	fill: #fff;
+	color: #000;
+}
+label.rerolled {
+	fill: #6f6;
+}
+
+input[type=checkbox]:checked + label svg, .has-selected svg {
+	fill: #6cf;
+}
+.rerolled  svg{
+	fill: #6f6;
+}
+
+.has-selected  .hide-has-selected, .show-has-selected{
+	display:none;
+}
+.has-selected .show-has-selected{
+	display: inline;
+}
+
+.large-dice, .dice-large, .dice-like-box{
+	width: 80px;
+	height: 80px;
+}
+.dice-medium{
+	width: 60px;
+	height: 60px;
+}
+.dice-small{
+	width: 40px;
+	height: 40px;
+}
+.dice-tiny{
+	width: 20px;
+	height: 20px;
+}
+.btn-reroll{
+	white-space: normal;
+	width: 100px;
+	padding: 5px 2px 5px 2px;
+}
+.btn-activated{
+	background: linear-gradient(to bottom,#FFFFFF 0,#93CEDE 100%);
+}
+:checked + label.btn-activate{
+	background: linear-gradient(to bottom,#FFFFFF 0,#93CEDE 100%);
+}
+
+.btn-reroll:focus, .btn-reroll:hover{
+	background-position:0;
+}
+
+:checked + label.activate{
+	text-shadow: 0 -1px 0 #286090;
+    background-image: -webkit-linear-gradient(top,#337ab7 0,#2b669a 100%);
+    background-image: -o-linear-gradient(top,#337ab7 0,#2b669a 100%);
+    background-image: -webkit-gradient(linear,left top,left bottom,from(#337ab7),to(#2b669a));
+    background-image: linear-gradient(to bottom,#337ab7 0,#2b669a 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff337ab7', endColorstr='#ff2b669a', GradientType=0);
+    background-repeat: repeat-x;
+    border-color: #2b669a;
+	color: #fff;
+}
+
+label.activate span.concealed{
+	visibility:hidden;
+}
+
+:checked + label.activate span.concealed{
+	visibility: visible;
+}
+
+
+.dice-like-box{
+	width: 78px;
+	height: 78px;
+	border: 4px solid #f00;
+	margin: .15em;
+	display: block;
+	font-size: 2em;
+}
+
+img.navbar-brand {
+	padding: 5px;
+}
+
+nav.navbar-fixed-top{
+    box-shadow: 0px 2px 2px #888888;
+}
+
+div.graphcontainer{
+	overflow-x:auto;
+	overflow-y:visible;
+	margin-bottom: 20px;
+}
+
+.dice-option{
+	width:25px;
+	height:25px;
+}
+
+.dice-option-check:checked + label{
+	fill: #FF0000;
+}
+
+.dice-option-check{
+	display:none;
+}
+
+label p.list-group-item-text{
+	font-weight: normal;
+}
+
+img.reportbutton{
+	width: 100px;
+	height: 80px;
+}
