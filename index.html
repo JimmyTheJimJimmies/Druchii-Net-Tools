@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="description" content="Druchii-net-tools : The theory crafting tools for Druchii.net ">
+
+    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+
+    <title>Druchii-net-tools</title>
+  </head>
+
+  <body>
+
+    <!-- HEADER -->
+    <div id="header_wrap" class="outer">
+        <header class="inner">
+          <a id="forkme_banner" href="https://github.com/DaeronSyriath/Druchii-Net-Tools">View on GitHub</a>
+
+          <h1 id="project_title">Druchii-net-tools</h1>
+          <h2 id="project_tagline">The theory crafting tools for Druchii.net </h2>
+
+            <section id="downloads">
+              <a class="zip_download_link" href="https://github.com/DaeronSyriath/Druchii-Net-Tools/zipball/master">Download this project as a .zip file</a>
+              <a class="tar_download_link" href="https://github.com/DaeronSyriath/Druchii-Net-Tools/tarball/master">Download this project as a tar.gz file</a>
+            </section>
+        </header>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div id="main_content_wrap" class="outer">
+      <section id="main_content" class="inner">
+        <h1>
+<a id="the-druchiinet-tools" class="anchor" href="#the-druchiinet-tools" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>The Druchii.net Tools</h1>
+
+<p>These are the theory crafting tools designed by, and for the Druchii.net community. The tools offer:</p>
+
+<ol>
+<li>
+<p>Combat Calculators, for</p>
+
+<ul>
+<li>9th Age</li>
+<li>Warhammer Fantasy Battles, 8th edition</li>
+<li>Warhammer, Age of Sigmar</li>
+<li>A combination of any supported platform.</li>
+</ul>
+</li>
+<li><p>A Dice Roller</p></li>
+<li>A comp comparator.. But this one is going to be added in a different branch (logic!?)</li>
+</ol>
+
+<h2>
+<a id="the-project" class="anchor" href="#the-project" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>The project</h2>
+
+<p>The goal of the project was to provide a set of easy-to-use tools to support the war-gaming community Druchii.net. Which tool would be developed would depend on the spur of the moment, and the demand. For example, the combat calculators saw a lot of improvement early on because there was a demand for that. On the other hand, nobody ever asked for a dice roller but the developers simply felt like making one instead of fulfilling a feature request.
+Feature requests would be accepted and granted, but most likely they would be turned down with a convoluted answer about complexity, scope and negative impact on the well-being of pandas.</p>
+
+<h2>
+<a id="omg-this-code-is-so-ugly" class="anchor" href="#omg-this-code-is-so-ugly" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>OMG this code is so ugly!</h2>
+
+<p>Yes, it is. This marvellous code was achieved by typing out the code on a classic typewriter, then pushing the sheets through a paper shredder and glueing it back together with shaving cream, before scanning it. Or something close to it.
+It was my intent to clean up the code before publishing it. This was two years ago, and all I achieved was delaying the publication.
+Perhaps the public shame of this code can spur a developer to clean up her or his code. Let's hope so.</p>
+
+<h2>
+<a id="an-endless-list-of-deplorable-design-choices" class="anchor" href="#an-endless-list-of-deplorable-design-choices" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>An endless list of deplorable design choices</h2>
+
+<ul>
+<li>The coding conventions were determined by the position of the moon, on the day that piece of code was developed. </li>
+<li>Halfway through my javascript code, I decided to switch styles in how I defined prototypes. It seemed like a good choice.</li>
+<li>I didn't use any content framework. Frameworks impress me as top heavy, and they seem to focus on structuring code that I think isn't worth structuring. Yes, "routing, action, view, template" are the holy <del>tri</del> <del>fourinity</del> <del>foursome</del> <del>fournity</del> important. But it seemed silly to put all that in a list of pages that have 1 path, 1 action, 1 view, 1 template.</li>
+<li>I used jQuery only because it came with Bootstrap</li>
+<li>I didn't develop javascript with any developer platform</li>
+<li>I used vanilla Javascript for all functional aspects of the tool, that is not tied to the look and feel. Because.</li>
+<li>I copied bootstrap's files instead of using the CDN. That's considered helping the CDN right?</li>
+<li>Any support for IE is coincidental</li>
+<li>I use SVG for my images. My kids can draw better than me. I feel like I can program a drawing better than I can draw a program... because you can't see the code of the drawing. </li>
+<li>The library files.. aren't really library files.</li>
+<li>I use preg_match to validate parameters. Don't judge me.</li>
+<li>I have not properly documented most of my code</li>
+<li>Yo dawg, I heard you liked design patterns so I put a builder pattern inside a builder pattern, so you can abstract while you abstract.</li>
+<li>My program cleverly maps configuration parameters to output settings by including flat-files</li>
+<li>The templates are just includes</li>
+<li>I didn't know how to make a proper content managed, and since I didn't use an MVC framework, I just made an include that reads all the parameters. This is also the same file used by 3-4 different webpages. Because, that's smart.</li>
+<li>I didn't optimize the code for computational efficiency. It's primary goal is computations, after all.</li>
+</ul>
+
+<h2>
+<a id="so-where-does-that-leave-us" class="anchor" href="#so-where-does-that-leave-us" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>So where does that leave us?</h2>
+
+<p>A massive clean-up job. And with proper documentation.</p>
+      </section>
+    </div>
+
+    <!-- FOOTER  -->
+    <div id="footer_wrap" class="outer">
+      <footer class="inner">
+        <p class="copyright">Druchii-net-tools maintained by <a href="https://github.com/DaeronSyriath">DaeronSyriath</a></p>
+        <p>Published with <a href="https://pages.github.com">GitHub Pages</a></p>
+      </footer>
+    </div>
+
+    
+
+  </body>
+</html>
