@@ -63,15 +63,6 @@ include "templates/header.php"; ?>
 				<p class="list-group-item-text">A simple tool to roll some dice, in case you forgot your dice bag. Tsk!</p>
 			</div>
 		</a>	
-		<a href="AoS-Comp-Comparator.php" class="list-group-item">
-			<div class="media-left">
-				<svg class="large-dice" viewBox="0 0 100 100"><use xlink:href="images/iconpack.svg#hit"></use></svg>
-			</div>
-			<div class="media-body">
-				<h4 class="list-group-item-heading">AoS Comp Comparator</h4>
-				<p class="list-group-item-text">A tool to compare the point systems of different comp packs.</p>
-			</div>
-		</a>	
 	</div>
 	
 	<h3>Legacy tools</h3>
