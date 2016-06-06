@@ -1,0 +1,39 @@
+<defs>
+<linearGradient id="score" x1="0%" y1="0%" x2="100%" y2="0%">
+	<stop offset="0%" stop-color="#F3C5BD"/>
+	<stop offset="50%" stop-color="#E86C57"/>
+	<stop offset="51%" stop-color="#EA2803"/>
+	<stop offset="75%" stop-color="#FF6600"/>
+	<stop offset="100%" stop-color="#C72200"/>
+</linearGradient>
+<linearGradient id="good" x1="0%" y1="0%" x2="0%" y2="100%">
+	<stop offset="0%" stop-color="#93CEDE"/>
+	<stop offset="100%" stop-color="#49A5BF"/>
+</linearGradient>
+<linearGradient id="expected" x1="0%" y1="0%" x2="0%" y2="100%">
+	<stop offset="0%" stop-color="#D2FF52"/>
+	<stop offset="100%" stop-color="#91E842"/>
+</linearGradient>
+<linearGradient id="poor" x1="0%" y1="0%" x2="0%" y2="100%">
+	<stop offset="0%" stop-color="#FFA84C"/>
+	<stop offset="100%" stop-color="#FF7B0D"/>
+</linearGradient>
+<linearGradient id="error" x1="0%" y1="0%" x2="0%" y2="100%">
+	<stop offset="0%" stop-color="#ffa569"/>
+	<stop offset="100%" stop-color="#c40000"/>
+</linearGradient>
+<linearGradient id="warning" x1="0%" y1="0%" x2="0%" y2="100%">
+	<stop offset="0%" stop-color="#ffd65e"/>
+	<stop offset="100%" stop-color="#ff8b26"/>
+</linearGradient>
+<linearGradient id="average" x1="0%" y1="0%" x2="0%" y2="100%">
+	<stop offset="0%" stop-color="#ffffff"/>
+	<stop offset="100%" stop-color="#C4C4C4"/>
+</linearGradient>
+</defs>
+<style>
+	svg text{font-weight:bold; font-size:12px; font-family:helvetica}
+	svg text.average{fill:#333; font-size:14px }
+	svg text.score, svg text.info{fill:#111; }
+	svg text.bar_summary{fill:#006D4F;}
+</style>

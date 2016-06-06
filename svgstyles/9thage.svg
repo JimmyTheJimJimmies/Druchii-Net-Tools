@@ -1,0 +1,92 @@
+<defs>
+<linearGradient id="score" x1="0%" y1="0%" x2="100%" y2="0%">
+	<stop offset="10%" style="stop-color: rgba(255,36,52,1);" />
+	<stop offset="70%" style="stop-color:rgba(185,0,16,1) ;" />
+</linearGradient>
+<linearGradient id="score" x1="0%" y1="0%" x2="100%" y2="0%">
+	<stop offset="0%" style="stop-color:rgba(183,222,237,1);" />
+	<stop offset="50%" style="stop-color:rgba(113,206,239,1);" />
+	<stop offset="51%" style="stop-color:rgba(33,180,226,1) ;" />
+	<stop offset="100%" style="stop-color:rgba(183,222,237,1);" />
+</linearGradient>
+
+<linearGradient id="score" x1="0%" y1="0%" x2="100%" y2="0%">
+	<stop offset="0%" style="stop-color:rgba(206,219,233,1);" />
+	<stop offset="17%" style="stop-color:rgba(170,197,222,1);" />
+	<stop offset="50%" style="stop-color:rgba(97,153,199,1);" />
+	<stop offset="51%" style="stop-color:rgba(58,132,195,1) ;" />
+	<stop offset="59%" style="stop-color:rgba(65,154,214,1);" />
+	<stop offset="71%" style="stop-color:rgba(75,184,240,1) ;" />
+	<stop offset="84%" style="stop-color:rgba(58,139,194,1);" />
+	<stop offset="100%" style="stop-color:rgba(38,85,139,1) ;" />
+</linearGradient>
+
+<linearGradient id="score" x1="0%" y1="0%" x2="100%" y2="0%">
+	<stop offset="0%" style="stop-color:rgba(252,213,114,1);" />
+	<stop offset="50%" style="stop-color: rgba(254,191,20,1);" />
+	<stop offset="51%" style="stop-color:rgba(206,151,0,1);" />
+	<stop offset="100%" style="stop-color:rgba(253,206,77,1);" />
+</linearGradient>
+
+<linearGradient id="good" x1="0%" y1="0%" x2="0%" y2="100%">
+	<stop offset="50%" style="stop-color:rgb(71, 142, 213);"/>
+	<stop offset="100%" style="stop-color:rgb(56, 112, 168);"/>
+</linearGradient>
+<linearGradient id="expected" x1="0%" y1="0%" x2="0%" y2="100%">
+	<stop offset="50%" style="stop-color:rgb(0, 183, 0);"/>
+	<stop offset="100%" style="stop-color:rgb(0, 153, 0);"/>
+</linearGradient>
+<linearGradient id="poor" x1="0%" y1="0%" x2="0%" y2="100%">
+	<stop offset="50%" style="stop-color:rgb(255, 163, 0);"/>
+	<stop offset="100%" style="stop-color:rgb(235, 138, 0);"/>
+</linearGradient>
+
+
+<linearGradient id="good" x1="0%" y1="0%" x2="0%" y2="100%">
+	<stop offset="0%" style="stop-color:rgba(197,222,234,1);"/>
+	<stop offset="31%" style="stop-color:rgba(138,187,215,1);"/>
+	<stop offset="100%" style="stop-color:rgba(6,109,171,1);"/>
+</linearGradient>
+<linearGradient id="expected" x1="0%" y1="0%" x2="0%" y2="100%">
+	<stop offset="50%" style="stop-color:rgb(71, 142, 213);"/>
+	<stop offset="100%" style="stop-color:rgb(56, 112, 168);"/>
+</linearGradient>
+<linearGradient id="poor" x1="0%" y1="0%" x2="0%" y2="100%">
+	<stop offset="0%" style="stop-color:rgba(255,197,120,1);"/>
+	<stop offset="100%" style="stop-color:rgba(251,157,35,1);"/>
+</linearGradient>
+
+
+
+<linearGradient id="good" x1="0%" y1="0%" x2="0%" y2="100%">
+	<stop offset="0%" style="stop-color:rgba(183,222,237,1);"/>
+	<stop offset="50%" style="stop-color:rgba(113,206,239,1);"/>
+	<stop offset="51%" style="stop-color:rgba(33,180,226,1) ;"/>
+	<stop offset="100%" style="stop-color:rgba(183,222,237,1);"/>
+</linearGradient>
+<linearGradient id="expected" x1="0%" y1="0%" x2="0%" y2="100%">
+	<stop offset="0%" style="stop-color:rgba(157,213,58,1);"/>
+	<stop offset="50%" style="stop-color:rgba(161,213,79,1);"/>
+	<stop offset="51%" style="stop-color:rgba(128,194,23,1) ;"/>
+	<stop offset="100%" style="stop-color:rgba(124,188,10,1);"/>
+</linearGradient>
+<linearGradient id="poor" x1="0%" y1="0%" x2="0%" y2="100%">
+	<stop offset="0%" style="stop-color:rgba(252,234,187,1);"/>
+	<stop offset="50%" style="stop-color:rgba(252,205,77,1) ;"/>
+	<stop offset="51%" style="stop-color:rgba(248,181,0,1) ;"/>
+	<stop offset="100%" style="stop-color:rgba(251,223,147,1);"/>
+</linearGradient>
+<linearGradient id="average" x1="0%" y1="0%" x2="0%" y2="100%">
+	<stop offset="0%" style="stop-color:rgb(255, 255, 255);"/>
+	<stop offset="100%" style="stop-color:rgb(196, 196, 196);"/>
+</linearGradient>
+
+
+</defs>
+<style>
+	svg text{font-weight:bold; font-size:12px; font-family: 'Trebuchet MS', Arial, sans-serif;}
+	svg text.average{fill:#222; font-size:14px }
+	svg text.score, svg text.info{fill:rgb(102, 102, 102); }
+	svg text.bar_summary{fill:rgb(238, 255, 238);}
+	svg text.bar_summary{fill:rgb(102, 102, 102); }
+</style>
