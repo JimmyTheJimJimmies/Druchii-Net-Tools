@@ -1,47 +1,90 @@
 # The Druchii.net Tools
 
-These are the theory crafting tools designed by, and for the Druchii.net community. The tools offer:
+A set of theory crafting and gaming tools for the fantasy war-gaming hobby, including:
+* A combat calculator, supporting 9th Age, Warhammer Fantasy Battles 8th edition and Age of Sigmar.
+* A dice roller
 
-1. Combat Calculators, for
- * 9th Age
- * Warhammer Fantasy Battles, 8th edition
- * Warhammer, Age of Sigmar
- * A combination of any supported platform.
+More tools will be added in the future.
 
-2. A Dice Roller
-3. A comp comparator.. But this one is going to be added in a different branch (logic!?)
+## Table of Contents
+
+
+## Installing and requirements
+
+The Druchii.net tools require a PHP enabled webserver. That should be it. Just move the content of the project to the public_html folder, or any subfolder and it should work out of the box.
+
+There is no support for customization or templating for the time being.
+
+
+## Live code and support
+
+The Druchii.net Tools are created and written for the Druchii.net community, where you can find a live copy and support:
+* [The Druchii.net Tools on the Druchii.net Community site](http://tools.druchii.net)
+* [Get support on the Druchii.net suggestions board](http://www.druchii.net/viewforum.php?f=5)
+* [Join the discussion, at Druchii.net] (http://www.druchii.net)
+
+Of course, for code specific issues (suggestions, bug reports), feel free to use the facilities offered by GitHub.
+* [The Druchii.net Tools on GitHub](https://github.com/DaeronSyriath/Druchii-Net-Tools)
+
 
 ## The project
 
-The goal of the project was to provide a set of easy-to-use tools to support the war-gaming community Druchii.net. Which tool would be developed would depend on the spur of the moment, and the demand. For example, the combat calculators saw a lot of improvement early on because there was a demand for that. On the other hand, nobody ever asked for a dice roller but the developers simply felt like making one instead of fulfilling a feature request.
-Feature requests would be accepted and granted, but most likely they would be turned down with a convoluted answer about complexity, scope and negative impact on the well-being of pandas.
+The druchii.net tools were designed to tackle a collection of specific demands and goals:
+* ''Accessible statistical analysis''. Detailed statistical analysis of unit performance in the game required more challenging calculations. The goal was to tackle these calculations, and offer the use and results in an accessible, intuitive way.
+* ''Community project''. The tools would be seen as a community project, closely following up on feature requests and demands from the community. Only one such request had to be delayed for a future release, expected to be implemented by the end of 2016.
+* ''Used for discussions or gaming''. A key feature of the tools is their ease of use in discussions, and/or games. This encouraged a mobile-friendly design and easy link to results.
+* ''Accidental pet project''. Since the original version was built and maintained by a single developer, with a passion for the community and the statistical analysis, it turned to be a pet project. This greatly stimulated the development of some features at the cost of code quality.
+* ''New to open source''. The code of the project has only just been released. This has somewhat shifted the focus of the development. Customization and portability, as well as code quality became more important. We understand both customizability and code quality leave much to be desired. We hope to improve both in future releases.
 
-## OMG this code is so ugly!
+## Future releases, planned features
 
-Yes, it is. This marvellous code was achieved by typing out the code on a classic typewriter, then pushing the sheets through a paper shredder and glueing it back together with shaving cream, before scanning it. Or something close to it.
-It was my intent to clean up the code before publishing it. This was two years ago, and all I achieved was delaying the publication.
-Perhaps the public shame of this code can spur a developer to clean up her or his code. Let's hope so.
+### Clean-up and documentation
 
-## An endless list of deplorable design choices
+The first steps are to clean up the code a bit, and improve the documentation. Even the bad code and designs will receive documentation. 
+There may be a few redundant files in there as well, which need to be removed.
 
-* The coding conventions were determined by the position of the moon, on the day that piece of code was developed. 
-* Halfway through my javascript code, I decided to switch styles in how I defined prototypes. It seemed like a good choice.
-* I didn't use any content framework. Frameworks impress me as top heavy, and they seem to focus on structuring code that I think isn't worth structuring. Yes, "routing, action, view, template" are the holy ~~tri~~ ~~fourinity~~ ~~foursome~~ ~~fournity~~ important. But it seemed silly to put all that in a list of pages that have 1 path, 1 action, 1 view, 1 template.
-* I used jQuery only because it came with Bootstrap
-* I didn't develop javascript with any developer platform
-* I used vanilla Javascript for all functional aspects of the tool, that is not tied to the look and feel. Because.
-* I copied bootstrap's files instead of using the CDN. That's considered helping the CDN right?
-* Any support for IE is coincidental
-* I use SVG for my images. My kids can draw better than me. I feel like I can program a drawing better than I can draw a program... because you can't see the code of the drawing. 
-* The library files.. aren't really library files.
-* I use preg_match to validate parameters. Don't judge me.
-* I have not properly documented most of my code
-* Yo dawg, I heard you liked design patterns so I put a builder pattern inside a builder pattern, so you can abstract while you abstract.
-* My program cleverly maps configuration parameters to output settings by including flat-files
-* The templates are just includes
-* I didn't know how to make a proper content managed, and since I didn't use an MVC framework, I just made an include that reads all the parameters. This is also the same file used by 3-4 different webpages. Because, that's smart.
-* I didn't optimize the code for computational efficiency. It's primary goal is computations, after all.
+### Customisation
 
-## So where does that leave us?
+In spite of the dramatic code quality, there's a fair few abstractions that permit customization. These are mostly the result of expected feature expansions that were never implemented. Since the tools are now open-source, ease of customisation becomes more important and worth the investment.
 
-A massive clean-up job. And with proper documentation.
+### Comp Comparator
+
+A tool that is under construction right now is a comp pack comparator for Age of Sigmar. This will be developed in a separate branch, until it is ready to be merged.
+
+### Machine Learning for Pile-in strategies
+
+Another tool under development is focused on a genetic algorithm to develop pile-in strategies. This should help us to test unit formations and pile-in counters.
+
+### Age of Sigmar special rules
+
+Many of the abilities in Age of Sigmar involve a special rule that can not be expressed as a modifier on a roll. These require a specific handler and, unfortunately, a lot of custom code for each rule.
+
+### Combat performance comparator
+
+A future release will permit multiple combat profiles to be compared, with the result being plotted in a single graphic. We noticed that combat performance is occasionally compared, and that the graphical load of such comparisons can hinder the discussions. By combining different profiles in a single graph, we could reduce the space required for such a comparison.
+This should be supported for all the gaming platforms.
+
+### Unit performance decay
+
+As a step-up to a combat resolution calculator, it may prove useful to observe a unit's performance over time and show its decay in performance as it takes damage.
+
+### Combat resolution calculator
+
+Eventually, the ultimate theory crafting goal is to have an accurate calculation of combat resolution.
+
+
+## Contributing
+
+We welcome any:
+* advice on code design
+* advice on portability, customisation support
+* coding
+* feature suggestions and/or requests
+* bug reports
+
+Code contributions may require up to a month to validate.
+
+## Authors
+
+The code was developed by @DaeronSyriath for [the Druchii.net community](http://www.druchii.net)
+

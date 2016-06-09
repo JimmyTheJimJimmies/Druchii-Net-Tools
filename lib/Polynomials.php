@@ -1,37 +1,37 @@
 <?php
-
-
-
-/***
- * The extensive library of functions
- *
- ***/
- 
 /**
- * Polynomial multiplication. 
- * Given: 
- *  X1 = SUM a_i * X^i 
- *  X2 = SUM b_j * X^j
- * Computes:
- *  X1 * X2 = SUM c_k * X^k
- * Where for any k:
- *  c_k = SUM a_i * b_j (where i+j = k)
- * For example:
- * (5 + 2x) * (7 + 3x^2) = 35 + 14x + 15x^2 + 6x^3
- * 
- * Polynomials are implemented as array, with
- * the position of the coefficient marking the 
- * order of x. Missing orders are denoted with 0.
- * (5 + 2x) -> [0=> 5, 1=>2]
- * (7 + 3x^2) -> [0=>7, 2=>3]
- * Result ->  [0=>35,1=>14,2=>15,3=>6]
- * Uses FOREACH loop, assuming this is the quickest
- * according to http://www.phpbench.com/
- * 
- * @param $first array
- * @param $second array
- * @return array
+ * Library for algebraic operations on polynomials
+ *
+ * PHP version 5
+ *
+ * LICENSE: 
+ *
+ * @package    Library
+ * @author     Daeron <Dieter.De.Verschrikkelijke@gmail.com>
+ * @copyright  2012 Druchii.Net
+ * @license    http://www.php.net/license/3_01.txt  PHP License 3.01
+ * @version    GIT: $Id$
+ * @since      File available since Release 0.0.1
  */
+
+ /**
+  * Multiplies two polynomials
+  *
+  * Polynomials are implemented as array, with the index of the coefficient marking the 
+  * order of x. Missing orders are denoted with 0.
+  * For example:
+  *    (5 + 2x) * (7 + 3x^2)
+  * Becomes:
+  *    multiply_polynomials([5,2], [7,0,3]);
+  * Returns:  
+  *    [35,14,15,6]
+  * Which stands for:
+  *  (35 + 14x + 15x^2 + 5x^3)
+  * 
+  * @param $first array
+  * @param $second array
+  * @return array
+  */
  
 
 function multiply_polynomials($x1, $x2) {
@@ -39,28 +39,30 @@ function multiply_polynomials($x1, $x2) {
 	forEach($x1 as $i => $ai){
 		if($ai != 0) {
 			forEach($x2 as $j => $bj) {
-				$result[($i+$j)] = $ai * $bj + (isset($result[($i+$j)])? $result[($i+$j)] : 0);		
+				if($bj !=0) {
+					if(isset($result[$i+$j])) {
+						$result[($i+$j)] = $ai * $bj + $result[($i+$j)];
+					} else {
+						$result[($i+$j)] = $ai * $bj;
+					}
+				}
 			}
 		}
 	}
 	return $result;
 }
 /**
- * Polynomial exponentiation (if that's even a word) 
- * Given: 
- *  X = SUM a_i * X^i 
- *  n element of N
- * Computes:
- *  X ^ n = X * ... * X (n times)
+ * Raises polynomial to the given power
+ *
  * For example:
- * (5 + 2x)^2 = 25 + 20x + 4x^2
- * 
- * Polynomials are implemented as array, with
- * the position of the coefficient marking the 
- * order of x. 
- * (5 + 2x) -> [0=> 5, 1=>2]
- * (5 + 2x)^2 ->  [0=>25, 1=>20, 2=>4]
- * 
+ *   (5 + 2x)^2
+ * Becomes:
+ *   polynomial_to_power([5,2],2)
+ * Returns:
+ *   [25,20,4]
+ * Which stands for:
+ * (25 + 20x + 4x^2)
+ *  
  * @param $x array
  * @param $n integer
  * @return array
@@ -76,8 +78,9 @@ function polynomial_to_power($x, $n) {
 }
 
 /**
- * polynomial_to_power_quick
- * Same as the above, except quicker.
+ * Raises polynomial to the given power
+ *
+ * Should be roughly twice as fast.
  * 
  * @param $x array
  * @param $n integer
